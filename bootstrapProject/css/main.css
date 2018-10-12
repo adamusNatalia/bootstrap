@@ -1,5 +1,11 @@
+@font-face {
+    font-family: TruenoLt;
+    src: url("../font/TruenoLt.otf");
+}
+
+
 body {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: TruenoLt,'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 h1,
 h2,
@@ -7,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: TruenoLt,'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
 
 }
@@ -47,6 +53,7 @@ h6 {
     background-color: #fff;
     padding-top: 0;
     padding-bottom: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link {
@@ -55,13 +62,25 @@ h6 {
 }
 
 #mainNav.navbar-shrink .logo {
-    height: 50px;;
+    height: 50px;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link{
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+#mainNav.navbar-static {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mainNav.navbar-static .navbar-nav>li.nav-item>a.nav-link {
+    color: #495057;
 }
 
 @media (min-width: 992px){
@@ -71,7 +90,7 @@ h6 {
     }
 }
 header.banner{
-    background-image: url("../img/almased6.jpg");
+    background-image: url("../img/almased8.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -85,8 +104,7 @@ header.banner .intro-text {
 
 @media (min-width: 768px) {
     header.banner .intro-text {
-        padding-top: 350px;
-        padding-bottom: 200px;
+        padding-top: 30vh;
         margin-left: 14rem;
     }
 
@@ -141,18 +159,18 @@ header.banner p {
 .btn-primary {
     background-color: #4db848;
     border-color: #4db848;
-    color: #fff;
+    color: #ffffffde;
 }
 
 .btn-primary-reverse {
-    background-color: #fff;
+    background-color: #ffffffde;
     border-color: #4db848;
     color: #4db848;
 }
 
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fff !important;
+    background-color: #ffffffde !important;
     border-color: #4db848 !important;
     color: #4db848;
 }
@@ -160,11 +178,11 @@ header.banner p {
 .btn-primary-reverse:active, .btn-primary-reverse:focus, .btn-primary-reverse:hover {
     background-color: #4db848;
     border-color: #4db848;
-    color: #fff;
+    color: #ffffffde;
 }
 
-.green:active , .green:focus, .green:hover {
-    border-color: #fff;
+.green {
+    border-color: #ffffffde;
 }
 
 .btn-l {
@@ -204,8 +222,8 @@ section {
     margin: 0 auto;
 }
 
-#almased #aboutAlmased{
-    background-image: url(../img/aboutAlmased.jpg);
+#almased #aboutDiet{
+    background-image: url(../img/aboutResearch.jpg);
 }
 
 #almased #aboutCompany{
@@ -213,7 +231,7 @@ section {
 }
 
 #almased #aboutResearch{
-    background-image: url(../img/aboutResearch.jpg);
+    background-image: url(../img/research.jpeg);
 }
 
 .almased-heading {
@@ -343,9 +361,20 @@ section {
     }
 }
 
+#gallery{
+    margin-bottom: 350px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     padding: 25px 0;
     text-align: center;
+    color: #495057;
+    position: fixed;
+    z-index: -101;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom:70px;
 }
 
 

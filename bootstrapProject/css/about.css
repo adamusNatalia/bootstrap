@@ -1,0 +1,72 @@
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-text span {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.showcase .showcase-text p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px){
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+section.showcase {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.showcase hr{
+    padding-bottom: 70px;
+}
+
+#aboutAlmased .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center;
+}
+
+#aboutAlmased hr {
+    padding-bottom: 70px;
+}
+
+.showcase .fluid-img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.showcase .fluid-img img{
+    width:100%;
+}
+
+.showcase .diet-text {
+    padding: 3rem;
+}
+
+.showcase .diet-text h2{
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px){
+    .showcase .diet-text {
+        padding: 7rem;
+    }
+}
+
+.showcase .no-padding{
+    padding-bottom: 0px;
+}
