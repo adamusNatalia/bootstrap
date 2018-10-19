@@ -18,6 +18,17 @@ h6 {
 
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/25.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .95;
+}
+
 .btn{
     border:1px solid transparent;
 }
@@ -361,14 +372,14 @@ section {
     }
 }
 
-#gallery{
-    margin-bottom: 350px;
+#footer{
+    margin-bottom: 300px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 footer {
-    padding: 25px 0;
-    text-align: center;
+    padding: 25px 50px;
     color: #495057;
     position: fixed;
     z-index: -101;
@@ -377,5 +388,90 @@ footer {
     padding-bottom:70px;
 }
 
+.footer-fixed .footer-left,
+.footer-fixed .footer-right,
+.footer-fixed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-fixed .footer-left{
+    float: left;
+}
+
+.footer-fixed .footer-left p a{
+    text-decoration: none;
+    color: inherit;
+}
 
 
+.footer-fixed .footer-links{
+    color:  #41963d;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-fixed .footer-links a{
+    color: inherit;
+}
+
+.footer-fixed .footer-right{
+    float: right;
+}
+
+.footer-fixed i{
+    background-color:  #41963d;
+    color: #ffffff;
+    font-size: 17px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 0px;
+    vertical-align: middle;
+}
+
+.footer-fixed  p.contact {
+    margin-bottom: 0.2rem;
+}
+
+
+.footer-fixed  p.mail{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-fixed .footer-right a{
+    text-decoration: none;
+    color: #41963d;
+}
+
+.footer-fixed a{
+    text-decoration: none;
+    color:inherit;
+}
+
+
+
+
+@media (max-width: 880px) {
+
+    .footer-fixed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-fixed .footer-left,
+    .footer-fixed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-fixed .footer-right i{
+        margin-left: 0;
+    }
+
+}
